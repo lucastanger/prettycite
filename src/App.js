@@ -7,7 +7,7 @@ function App() {
       <header className="App-header flex flex-col justify-center items-center">
         <img src={logo} className="w-1/3 max-w-40 md:max-w-xs mt-12" alt="logo" />
         <h3 className="text-secondarybg font-body text-xl md:text-3xl mt-10">
-          citation made easy.
+          citation. made easy.
         </h3>
         <Search/>
       </header>
