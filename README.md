@@ -1,7 +1,17 @@
 <p align="center">
   <img width="" height="200" alt="prettycite logo" src="https://github.com/lucastanger/prettycite/blob/master/docs/prettycite_logo.png">
 </p>
-
+<p align="center">
+      <a href="https://codecov.io/gh/lucastanger/prettycite">
+        <img src="https://codecov.io/gh/lucastanger/prettycite/branch/master/graph/badge.svg?token=T7FBW0TYJ7"/>
+      </a>
+      <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/lucastanger/prettycite">
+      <img alt="GitHub" src="https://img.shields.io/github/license/lucastanger/prettycite">
+      <img alt="GitHub issues" src="https://img.shields.io/github/issues/lucastanger/prettycite">
+      <img alt="Website" src="https://img.shields.io/website?url=http%3A%2F%2Flucastanger.github.io%2Fprettycite">
+      <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/lucastanger/prettycite">
+      <img alt="GitHub branch checks state" src="https://img.shields.io/github/checks-status/lucastanger/prettycite/master">
+</p>
 # Table of Contents
 
 # Description
