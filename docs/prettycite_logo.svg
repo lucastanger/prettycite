@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="prettycite.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="349.7422"
+     inkscape:cy="396.83616"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:snap-bbox="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="2552"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:snap-page="false" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="opacity:1;fill:#c96567;fill-opacity:1;fill-rule:evenodd;stroke-width:0.264617"
+       id="path10"
+       transform="matrix(0.99973987,0.02280776,0,1,0,0)"
+       cy="94.522461"
+       cx="103.5939"
+       r="52.916668" />
+    <g
+       id="g3005"
+       transform="matrix(0.09811251,0,0,0.09811251,78.730372,63.349411)">
+      <path
+         d="m 501.991,128.354 -241,-85.031 c -3.229,-1.14 -6.752,-1.14 -9.981,0 l -241,85.031 C 4.018,130.468 0.008,136.128 0,142.482 c -0.008,6.354 3.989,12.023 9.976,14.151 l 241,85.677 c 1.625,0.578 3.325,0.867 5.024,0.867 1.7,0 3.399,-0.289 5.024,-0.867 l 241,-85.677 c 5.987,-2.128 9.983,-7.797 9.976,-14.151 -0.008,-6.354 -4.018,-12.014 -10.009,-14.128 z"
+         id="path2989"
+         style="fill:#ffffff;fill-opacity:1" />
+      <path
+         d="m 475.67072,234.93124 v -91.28642 l -16.9381,7.44092 v 83.8455 c -5.10175,3.62871 -8.53962,10.42775 -8.53962,18.22449 0,7.79605 3.43787,14.59578 8.53962,18.2245 l -11.59669,25.73365 c -2.37461,5.26937 15.70759,4.86168 20.38476,4.86168 4.67717,0 22.86649,0.35809 20.38476,-4.86168 l -12.23473,-25.73296 c 5.10175,-3.62801 8.53962,-10.42844 8.53962,-18.22449 0,-7.79674 -3.4373,-14.59648 -8.53962,-18.22519 z"
+         id="path2991"
+         style="stroke-width:0.627631;fill:#ffffff;fill-opacity:1"
+         sodipodi:nodetypes="ccccscssscsc" />
+      <path
+         d="m 256,273.177 c -5.149,0 -10.22,-0.875 -15.073,-2.6 L 105.444,222.412 v 66.008 c 0,16.149 16.847,29.806 50.073,40.59 28.961,9.4 64.647,14.577 100.483,14.577 35.836,0 71.521,-5.177 100.483,-14.577 33.226,-10.784 50.073,-24.441 50.073,-40.59 v -66.008 l -135.482,48.165 c -4.854,1.725 -9.925,2.6 -15.074,2.6 z"
+         id="path2993"
+         style="fill:#ffffff;fill-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:10.5833px;line-height:1.25;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Normal';stroke-width:0.264583"
+       x="72.162773"
+       y="119.06857"
+       id="text845"><tspan
+         sodipodi:role="line"
+         id="tspan843"
+         x="72.162773"
+         y="119.06857"
+         style="font-style:normal;font-variant:normal;font-weight:200;font-stretch:normal;font-size:10.5833px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, Ultra-Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583">prettycite</tspan></text>
+  </g>
+</svg>
