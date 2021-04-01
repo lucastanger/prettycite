@@ -2,6 +2,7 @@ import Footer from './Footer';
 import logo from './images/prettycite_logo.png';
 import Search from './Search';
 
+
 function App() {
   return (
     <div className="App bg-primarybg h-screen">
@@ -10,7 +11,7 @@ function App() {
         <h3 className="text-secondarybg font-light text-xl md:text-3xl mt-10">
           citation. made easy.
         </h3>
-        <Search/>
+        <Search />
       </header>
 
 
