@@ -13,7 +13,7 @@ export default function Landing() {
             </div>
             <img className="w-full h-full object-cover" src="https://images.unsplash.com/photo-1520467795206-62e33627e6ce?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="image of a book"/>
             <div className="absolute right-0 bottom-0">
-                <a className="text-gray-50 text-sm opacity-20" href="https://unsplash.com/photos/MiJTU6lqksg" target="_blank">&copy;</a>
+                <a className="text-gray-50 text-sm opacity-20" href="https://unsplash.com/photos/MiJTU6lqksg" target="_blank">image &copy; unsplash.com</a>
             </div>
         </div>
     )
