@@ -20,7 +20,7 @@ export default function LetsBegin() {
                         <div className="relative col-start-2 col-end-3 lg:col-end-3 row-start-2 row-end-3 lg:row-start-3 lg:row-end-4 self-center pl-8 sm:px-6 md:px-8 pt-6 md:pt-8 lg:px-0 lg:pt-0">
                             <div className="relative z-10 bg-white rounded-tl-xl sm:rounded-t-xl lg:rounded-xl shadow-lg lg:-mr-8 divide-y divide-gray-100">
                                 <nav className="p-4 text-sm font-medium">
-                                    <input type="text" value="https://prettycite-2ywimkg14-lucastanger.vercel.app/api/v1/cite" readOnly className="bg-indigo-100 text-indigo-700 cursor-pointer py-2 px-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-indigo-600" />
+                                    <input type="text" value="GET https://prettycite-2ywimkg14-lucastanger.vercel.app/rest/api/v1/cite" readOnly className="bg-indigo-100 text-indigo-700 cursor-pointer py-2 px-3 rounded w-full focus:outline-none focus:ring-2 focus:ring-indigo-600" />
                                 </nav>
                                 <APIArticle first="true"
                                     img="https://books.google.com/books/publisher/content?id=uNDaDwAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE71zTUOCiQAQrwcIUJcDIqvd32MeQrae_kGurpg0_yHtKJ4fJKAf3qKrbp5tEh9Q8ACphTPto9WbpLFrEe_GPzrWFLuL0F_ZvnzevUp92N9vbIqq_aJjedGGd6z9O92X0ihgge_A&source=gbs_api"
@@ -71,7 +71,11 @@ export default function LetsBegin() {
                                                         <div aria-hidden="true" className="hidden md:block text-white text-opacity-50 flex-none py-4 pr-4 text-right select-none" style={{width: "50px"}}>
                                                             1<br />2<br />3<br />4<br />5<br />6<br />7<br />8<br />9<br />10<br />11<br />12<br />13<br />14<br />15<br />16<br />17<br />18<br />19<br />20<br />21<br />22
                                                         </div>
-                                                        <code className="flex-auto relative block text-white pt-4 pb-4 px-4 overflow-auto"></code>
+                                                        <code className="flex-auto relative block text-white pt-4 pb-4 px-4 overflow-auto">
+                                                            <span className="block">{'{'}</span>
+                                                            <span className="">&nbsp;&nbsp;&nbsp;</span><span className="">"requestUUID":&nbsp; "915c7b17-0f27-4047-8bb0-746732dcb968"</span>
+                                                            <span className="block">{'}'}</span>
+                                                        </code>
                                                     </pre>
                                                 </div>
                                             </div>
