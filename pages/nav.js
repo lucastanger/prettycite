@@ -1,11 +1,5 @@
 import React, { useState } from "react";
 import Link from 'next/link'
-import {
-    BrowserView,
-    MobileView,
-    isBrowser,
-    isMobile
-  } from "react-device-detect";
 
 export default function Nav() {
     const [isActive, setActive] = useState("false");
