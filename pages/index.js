@@ -6,7 +6,7 @@ import Landing from './landing'
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen ">
+    <div className="h-screen w-screen">
       <Nav />
       <Landing />
     </div>

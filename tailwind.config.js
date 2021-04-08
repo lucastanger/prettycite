@@ -4,15 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      
+      margin: {
+        '-full': '-100%',
+      }
     },
-    // colors: {
-    //   primarybg: '#314455',
-    //   secondarybg: '#644E5B', 
-    //   primary: '#9E5A63',
-    //   secondary: '#C96557',
-    //   lightgray: '#97AABD'
-    // },
     fontFamily: {
       'body': ['Source Code Pro']
     }
