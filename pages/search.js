@@ -1,16 +1,24 @@
-function Search() {
+export default function Search() {
+
+    let active = "url";
+
     return (
-        <div className="w-full flex justify-center">
-            <input 
-                type="text" 
-                name="search" 
-                id="search" 
-                autoComplete="off" 
-                className="px-3 mt-10 w-4/5 h-12 rounded-xl bg-lightgray shadow-lg text-primarybg placeholder-primarybg placeholder-opacity-50" 
-                placeholder="ISBN, Book or something else.." 
-            />
+        <div className="w-3/4 mx-auto mt-20 max-w-lg space-y-5">
+            <div className="flex items-center justify-center space-x-10 uppercase">
+                <a className="underline text-indigo-800">url</a>
+                <a className="">isbn</a>
+                <a className="">title</a>
+                <a className="">doi</a>
+            </div>
+            <div className="relative text-gray-700">
+                <input 
+                    className="w-full h-10 pl-3 pr-8 text-base border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-600 placeholder-gray-300" 
+                    type="text" placeholder="http://prettycite.vercel.app"
+                />
+                <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none text-gray-400 font-extralight">
+                    ⌘ + V
+                </div>
+            </div>
         </div>
     )
 }
-
-export default Search

@@ -37,3 +37,14 @@
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
+
+  .GradientLockup_root__sBkgs{
+    grid-template-columns: 1fr minmax(min-content,640px) 1fr;
+  }
+
+  @media (min-width: 1024px) {
+    .GradientLockup_root__sBkgs {
+      grid-template-columns: 2rem 1fr 59.375% 2rem;
+      grid-template-rows: auto 2.25rem auto 2.25rem;
+    }
+  }

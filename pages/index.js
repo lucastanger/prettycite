@@ -1,14 +1,13 @@
-import Head from 'next/head'
-import Footer from './footer'
-import Search from './search'
 import Nav from './nav'
 import Landing from './landing' 
+import Search from './search'
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen">
+    <div className="h-screen w-screen dark:bg-gray-800">
       <Nav />
       <Landing />
+      <Search />
     </div>
   )
 }
