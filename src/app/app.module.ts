@@ -9,6 +9,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ApiComponent } from './api/api.component';
 import { NgVariableModule } from './shared/ng-variable/ng-variable.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
     declarations: [
@@ -17,7 +18,8 @@ import { NgVariableModule } from './shared/ng-variable/ng-variable.module';
         SearchComponent,
         AboutComponent,
         ContactComponent,
-        ApiComponent
+        ApiComponent,
+        FooterComponent
     ],
     imports: [BrowserModule, AppRoutingModule, NgVariableModule],
     providers: [],
