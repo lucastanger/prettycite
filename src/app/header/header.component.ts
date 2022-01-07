@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import {
+    ChangeDetectionStrategy,
+    Component,
+    HostListener,
+    OnInit
+} from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
 @Component({
@@ -10,6 +15,12 @@ import { BehaviorSubject } from 'rxjs';
 export class HeaderComponent implements OnInit {
     private navigationIsActiveSubject$ = new BehaviorSubject<boolean>(false);
     public isActive$ = this.navigationIsActiveSubject$.asObservable();
+    scrolled: boolean = false;
+
+    @HostListener('window:scroll', [])
+    onWindowScroll() {
+        this.scrolled = window.scrollY > 0;
+    }
 
     constructor() {}
 

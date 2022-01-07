@@ -10,6 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ApiComponent } from './api/api.component';
 import { NgVariableModule } from './shared/ng-variable/ng-variable.module';
 import { FooterComponent } from './footer/footer.component';
+import { ResultsComponent } from './results/results.component';
+import { ResultComponent } from './results/result/result.component';
 
 @NgModule({
     declarations: [
@@ -19,7 +21,9 @@ import { FooterComponent } from './footer/footer.component';
         AboutComponent,
         ContactComponent,
         ApiComponent,
-        FooterComponent
+        FooterComponent,
+        ResultsComponent,
+        ResultComponent
     ],
     imports: [BrowserModule, AppRoutingModule, NgVariableModule],
     providers: [],
