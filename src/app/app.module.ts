@@ -12,6 +12,7 @@ import { NgVariableModule } from './shared/ng-variable/ng-variable.module';
 import { FooterComponent } from './footer/footer.component';
 import { ResultsComponent } from './results/results.component';
 import { ResultComponent } from './results/result/result.component';
+import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
 
 @NgModule({
     declarations: [
@@ -23,7 +24,8 @@ import { ResultComponent } from './results/result/result.component';
         ApiComponent,
         FooterComponent,
         ResultsComponent,
-        ResultComponent
+        ResultComponent,
+        CookieConsentComponent
     ],
     imports: [BrowserModule, AppRoutingModule, NgVariableModule],
     providers: [],
