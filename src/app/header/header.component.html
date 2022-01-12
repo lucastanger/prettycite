@@ -3,8 +3,8 @@
     class="flex flex-wrap flex-row justify-between space-x-4 bg-neutral-100 px-6 md:space-x-4 sticky top-0 z-50 transition-colors duration-500 backdrop-blur dark:bg-neutral-900 border-b border-solid border-gray-50/[0.06]"
     [ngClass]="scrolled ? 'dark:bg-gray-900/75 bg-white/75' : ''"
 >
-    <a href="" class="block uppercase py-6 dark:text-primary-100">
-        prettycite
+    <a href="" class="block uppercase py-6 dark:text-primary-100 select-none">
+        prettycite<span class="text-amber-500 text-xs">premium</span>
     </a>
 
     <button
@@ -42,26 +42,26 @@
     </button>
     <nav
         *ngVariable="isActive$ | async as isActive"
-        class="uppercase md:relative md:flex flex-col md:flex-row md:space-x-5 md:items-center font-semibold text-sm w-full md:w-auto space-y-3 md:space-y-0 md:bg-transparent pb-3 md:pb-0"
+        class="uppercase md:relative md:flex flex-col md:flex-row md:space-x-5 md:items-center font-semibold text-sm w-full md:w-auto space-y-3 md:space-y-0 md:bg-transparent pb-3 md:pb-0 select-none"
         [ngClass]="isActive ? '' : 'hidden'"
     >
         <a
-            href="/search"
+            routerLink="/search"
             class="block text-neutral-600 dark:text-neutral-300 p-4 hover:text-primary-500"
             >Home</a
         >
         <a
-            href="/lets-begin"
+            routerLink="/lets-begin"
             class="block text-neutral-600 dark:text-neutral-300 p-4 hover:text-primary-500"
             >Let's begin</a
         >
         <a
-            href="/about"
+            routerLink="/about"
             class="block text-neutral-600 dark:text-neutral-300 p-4 hover:text-primary-500"
             >About</a
         >
         <a
-            href="/contact"
+            routerLink="/contact"
             class="block text-neutral-600 dark:text-neutral-300 p-4 hover:text-primary-500"
             >Contact me</a
         >
