@@ -6,6 +6,7 @@ import {
     Inject,
     OnInit
 } from '@angular/core';
+import { from, of } from 'rxjs';
 import { Result } from '../shared/interfaces/result.interface';
 
 @Component({
@@ -17,6 +18,7 @@ import { Result } from '../shared/interfaces/result.interface';
 export class ResultsComponent implements AfterViewInit {
     results: Result[] = new Array();
     private intersectionObserver?: IntersectionObserver;
+    private lastIntersectionObserver?: IntersectionObserver;
 
     constructor(@Inject(DOCUMENT) private document: Document) {
         this.results.push({
@@ -94,6 +96,8 @@ export class ResultsComponent implements AfterViewInit {
             authors: [{ authorName: 'Poniros', authorSurname: '' }],
             citation: [{ citationType: 'BIBTEX', citationContent: '@BOOK' }]
         });
+
+        from(this.results).subscribe(console.log);
     }
 
     ngAfterViewInit(): void {
@@ -114,12 +118,37 @@ export class ResultsComponent implements AfterViewInit {
                 }
             },
             {
-                threshold: 1
+                threshold: 0.5
             }
         );
+
+        // this.lastIntersectionObserver = new IntersectionObserver((entries) => {
+        //     const lastCard = entries[0];
+        //     if (!lastCard.isIntersecting) return;
+        //     this.loadNewCards();
+        //     this.lastIntersectionObserver?.unobserve(lastCard.target);
+        //     this.lastIntersectionObserver?.observe(results[results.length - 1]);
+        // }, {});
+
+        // this.lastIntersectionObserver?.observe(results[results.length - 1]);
 
         results.forEach((result) => {
             this.intersectionObserver?.observe(result);
         });
     };
+
+    private loadNewCards() {
+        this.results.push({
+            resultTitle: 'Angular(2020)',
+            resultDescription:
+                'Grundlagen, fortgeschrittene Themen und Best Practices - inkl. RxJS, NgRx und PWA',
+            resultThumbnail: {
+                thumbnailUrl:
+                    'https://books.google.com/books/content?id=z-8BEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api',
+                thumbnailAltText: 'AngularBookCover'
+            },
+            authors: [{ authorName: 'Hoppe', authorSurname: 'Malcher' }],
+            citation: [{ citationType: 'BIBTEX', citationContent: '@BOOK' }]
+        });
+    }
 }
