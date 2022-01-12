@@ -1,25 +1,57 @@
 <div
-    class="border-t border-solid dark:border-gray-50/[.06] flex flex-row py-5 px-2 space-x-5"
+    class="result-card border-t border-solid dark:border-gray-50/[.06] flex flex-row py-5 px-2 space-x-5 opacity-0 transition-all duration-300 ease-in-out"
 >
     <div class="h-48 w-56">
         <img
-            src="https://books.google.com/books/content?id=z-8BEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api"
+            [src]="result.resultThumbnail?.thumbnailUrl"
+            [alt]="result.resultThumbnail?.thumbnailAltText"
         />
     </div>
     <div class="h-48 w-full text-primary-400">
-        <p class="inline pr-2">Angular (2020)</p>
-        <span class="text-neutral-500 text-sm"
-            >Grundlagen, fortgeschrittene Themen und Best Practices - inkl.
-            RxJS, NgRx und PWA</span
-        >
+        <p class="inline pr-2">{{ result.resultTitle }}</p>
+        <span class="text-neutral-500 text-sm">{{
+            result.resultDescription
+        }}</span>
         <p class="text-sm text-neutral-300">
-            Autoren: Malcher Hoppe Koppenhagen
+            Autoren: {{ result.authors[0].authorSurname }}
+            {{ result.authors[0].authorName }}
         </p>
     </div>
-    <div class="h-48 w-56 flex justify-center items-center">
+    <div class="h-48 w-56 flex justify-center items-center flex-col gap-5">
         <a
-            class="rounded-lg bg-primary-600 w-2/4 h-10 flex items-center justify-center cursor-pointer text-neutral-100 hover:bg-neutral-800/50 hover:text-primary-500 transition transform duration-300"
-            >cite</a
+            class="rounded-lg bg-primary-500 w-2/4 h-10 flex items-center justify-center cursor-pointer text-neutral-100 hover:bg-neutral-800/50 hover:text-neutral-100 hover:underline underline-offset-1 decoration-sky-500 transition transform duration-300"
+            >Open</a
+        >
+        <a
+            (click)="openCitationBox()"
+            class="rounded-lg bg-neutral-100 w-2/4 h-10 flex items-center justify-center cursor-pointer text-primary-900 hover:bg-neutral-800/50 hover:text-neutral-100 hover:underline underline-offset-1 decoration-sky-500 transition transform duration-300"
+            >Cite</a
         >
     </div>
+</div>
+<div
+    class="transition-all duration-500 ease-in-out text-neutral-100 h-0 overflow-hidden pl-5 pr-16 relative"
+    #citation
+>
+    <textarea
+        class="w-full appearance-none block h-64 py-2 px-3 select-all border-0 rounded-md shadow-lg bg-gradient-to-br from-gray-800 to-gray-900 text-neutral-50 focus:ring-0 max-h-96"
+        [value]="result.citation[0].citationContent"
+    >
+    </textarea>
+    <span
+        class="absolute right-[4.5rem] top-2 hover:cursor-pointer hover:text-sky-500"
+        ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+            /></svg
+    ></span>
 </div>
