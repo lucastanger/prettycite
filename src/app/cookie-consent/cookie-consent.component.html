@@ -1,0 +1,49 @@
+<div
+    class="sticky left-0 right-0 mx-3.5 bottom-4 px-4 py-3 rounded-lg bg-gradient-to-r from-primary-800 to-indigo-700 sm:flex items-center gap-5 text-neutral-100 opacity-0 transition-all ease-in duration-500 grid grid-cols-2 grid-rows-2"
+    #cookiebar
+>
+    <div
+        class="rounded-lg bg-primary-800 w-10 h-10 flex-none items-center justify-center flex"
+    >
+        <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="fill-neutral-100"
+        >
+            <path
+                d="M12.078 0c6.587.042 11.922 5.403 11.922 12 0 6.623-5.377 12-12 12s-12-5.377-12-12c3.887 1.087 7.388-2.393 6-6 4.003.707 6.786-2.722 6.078-6zm1.422 17c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm-6.837-3c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm11.337-3c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2zm-6-1c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm-9-3c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm13.5-2c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm-15-2c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm6-2c.828 0 1.5.672 1.5 1.5s-.672 1.5-1.5 1.5-1.5-.672-1.5-1.5.672-1.5 1.5-1.5zm-3.5-1c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1z"
+            />
+        </svg>
+    </div>
+    <p class="flex-1">
+        We use cookies! By using this site you agree to their use.
+    </p>
+    <button
+        class="flex-none bg-neutral-100 rounded-lg py-2 px-4 text-primary-900 transition-all hover:bg-neutral-900 hover:text-neutral-100 ease-in-out duration-300 hover:underline decoration-sky-500 underline-offset-1"
+    >
+        Learn more
+    </button>
+    <button
+        class="flex-none rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white transition-all duration-150 ease-in-out p-2"
+        (click)="closeCookieConsentBar()"
+    >
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            fill="fill-neutral-100"
+        >
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+            />
+        </svg>
+    </button>
+</div>
